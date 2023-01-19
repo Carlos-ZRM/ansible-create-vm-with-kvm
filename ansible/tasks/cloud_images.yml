@@ -1,0 +1,45 @@
+---
+
+- name: create source image directory
+  file:
+    path: "/var/lib/libvirt/source_images"
+    state: directory
+
+- name: create directories
+  file:
+    path: "{{ ['dest'] }}"
+    state: directory
+  loop: "{{ images_urls_dict }}"
+
+- name: check if source images files exists
+  stat:
+    path: "{{ item['dest'] }}/{{ item['name'] }}"
+  register: stat_source_img
+  loop: "{{ images_urls_dict }}"
+
+- name: wget cloud images if not downloaded
+  get_url:
+    url: "{{ item['item']['url'] }}"
+    dest: "{{ item['item']['dest'] }}/{{ item['item']['name'] }}"
+  when: "item.stat.exists == False"
+  loop: "{{ stat_source_img.results }}"
+
+
+- name: check if vm disk exists
+  stat:
+    path: /var/lib/libvirt/images/{{ item.0.name + '{0:02d}'.format( item.1 ) +'_'+ item.0.os_variant }}.qcow2
+  register: stat_vm_disk
+  loop: "{{ server_roles | subelements('count') }}"
+
+  
+- name: create disk
+  shell: |
+    qemu-img create -b /var/lib/libvirt/source_images/{{ item.item.0.image }} \
+    -F "{{ item.item.0.image_format }}" \
+    -f qcow2 \
+    /var/lib/libvirt/images/{{ item.item.0.name + '{0:02d}'.format( item.item.1 ) }}_{{ item.item.0.os_variant }}.qcow2 \
+    {{ item.item.0.size }}
+  when: 
+    - "item.stat.exists == False"
+    - "item.item.0.name + '{0:02d}'.format( item.item.1 ) in create_vms"
+  loop: "{{ stat_vm_disk.results }}"

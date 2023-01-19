@@ -1,0 +1,26 @@
+#cloud-config
+ssh_pwauth: True
+disable_root: True
+users:
+- default
+- name: fedora
+  shell: /bin/bash
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  lock_passwd: False
+  ssh-authorized-keys:
+    - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEoqTYStJo8xcOPrYfTOI5uHIXvXIsrlfUoMtaaZb9Ok elliptic curve  
+- name: kubernetes
+  shell: /bin/bash
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  lock_passwd: False
+  ssh-authorized-keys:
+    - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEoqTYStJo8xcOPrYfTOI5uHIXvXIsrlfUoMtaaZb9Ok elliptic curve 
+chpasswd:
+  list: |
+    fedora:fedora
+    kubernetes:kubernetes
+  expire: False
+runcmd:
+  - dnf update -y
+  - echo "Server is UP" > /tmp/system_up
+

@@ -1,0 +1,47 @@
+---
+- name: create cloud init directory
+  file:
+    path: "/var/lib/libvirt/cloud_init"
+    state: directory
+
+- name: create config directories
+  file:
+    path: "/var/lib/libvirt/cloud_init/{{ item.0.name + '{0:02d}'.format( item.1 ) }}"
+    state: directory
+  when: "item.0.name + '{0:02d}'.format( item.1 ) in create_vms"
+  loop: "{{ server_roles | subelements('count') }}"
+
+
+- name: create meta-data files
+  template:
+    src: templates/meta-data-cloudi.j2
+    dest: "/var/lib/libvirt/cloud_init/{{ item.0.name + '{0:02d}'.format( item.1 ) }}/meta-data"
+  when: "item.0.name + '{0:02d}'.format( item.1 ) in create_vms"
+  loop: "{{ server_roles | subelements('count') }}"
+
+- name: create user-data files
+  template:
+    src: templates/user-data-cloudi.j2
+    dest: "/var/lib/libvirt/cloud_init/{{ item.0.name + '{0:02d}'.format( item.1 ) }}/user-data"
+  when: "item.0.name + '{0:02d}'.format( item.1 ) in create_vms"
+  loop: "{{ server_roles | subelements('count') }}"
+
+- name: check if iso image exists
+  stat:
+    path: "/var/lib/libvirt/cloud_init/{{ item.0.name }}{{ '{0:02d}'.format( item.1 ) }}/{{ item.0.name }}{{ '{0:02d}'.format( item.1 ) }}.iso"
+  register: stat_iso_img
+  loop: "{{ server_roles | subelements('count') }}"
+
+- name: create iso image
+  shell: |
+    genisoimage \
+    -output ./{{ item.item.0.name + '{0:02d}'.format( item.item.1 ) }}.iso \
+    -volid cidata \
+    -joliet \
+    -rock user-data meta-data
+  args:
+    chdir: /var/lib/libvirt/cloud_init/{{ item.item.0.name }}{{ '{0:02d}'.format( item.item.1 ) }}
+  when: 
+    - "item.stat.exists == False"
+    - "item.item.0.name + '{0:02d}'.format( item.item.1 ) in create_vms"
+  loop: "{{ stat_iso_img.results }}"

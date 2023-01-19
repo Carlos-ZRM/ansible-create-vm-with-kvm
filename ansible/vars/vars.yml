@@ -1,0 +1,11 @@
+---
+
+images_urls_dict:
+  - name: fedora-coreos-37.20221211.3.0-openstack.x86_64.qcow2.xz
+    url: https://builds.coreos.fedoraproject.org/prod/streams/stable/builds/37.20221211.3.0/x86_64/fedora-coreos-37.20221211.3.0-openstack.x86_64.qcow2.xz
+    dest: /var/lib/libvirt/source_images/
+    format: qcow2.xz
+  - name: Fedora-Cloud-Base-37-1.7.x86_64.qcow2
+    url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.qcow2
+    dest: /var/lib/libvirt/source_images
+    format: qcow2

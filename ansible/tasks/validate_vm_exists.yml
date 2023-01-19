@@ -1,0 +1,23 @@
+---
+
+- name: get_status
+  become: true
+  shell: "virsh list --all | grep {{ item.0.name }}{{ '{0:02d}'.format( item.1 ) }} || true "
+  loop: "{{ server_roles | subelements('count') }}"
+  register: vms_status
+  tags:
+    - get_virsh_info
+
+- name: Set fact for exist state
+  set_fact:
+    create_vms: "{{ create_vms + [ item.item.0.name + '{0:02d}'.format( item.item.1 ) ] }}"
+  when: item.stdout == ''
+  loop: "{{  vms_status.results }}"
+  tags:
+    - get_virsh_info
+
+- name: List of new VMS
+  debug:
+    msg: "{{ create_vms }}"
+  tags:
+    - get_virsh_info
