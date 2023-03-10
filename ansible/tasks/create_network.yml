@@ -1,0 +1,52 @@
+---
+
+- name: Get facts for created networks
+  shell: "virsh net-info {{ item.name }} 2&> /dev/null"
+  register: stat_virsh_network
+  failed_when:
+    - stat_virsh_network.rc not in [0,1]
+  loop: "{{ virsh_network }}"
+  tags: create-network
+
+- name: Create directory for network templates
+  file:
+    path: /etc/libvirt/qemu/networks/templates
+    state: directory
+  tags: create-network
+
+- name: Create virsh template for networks
+  template:
+    src: templates/virsh-net-xml.j2
+    dest: /etc/libvirt/qemu/networks/templates/{{ item.name }}-template.xml
+  loop: "{{ virsh_network }}"
+  tags: create-network
+  
+- name: Create virsh networks
+  shell:  |
+    virsh net-define --file {{ item.item.name }}-template.xml
+  args:
+    chdir: /etc/libvirt/qemu/networks/templates
+  when:
+     "{{ item.rc==1 }}"
+  loop: "{{ stat_virsh_network.results }}"
+  tags: create-network
+
+- name: Set networks to Auto Start
+  shell: |
+    virsh net-start {{ item.item.name }}
+  args:
+    chdir: /etc/libvirt/qemu/networks/templates
+  when:
+     "{{ item.rc==1 }}"
+  loop: "{{ stat_virsh_network.results }}"
+  tags: create-network
+
+- name: Start virsh networks
+  shell:  |
+    virsh  net-start {{ item.item.name }}
+  args:
+    chdir: /etc/libvirt/qemu/networks/templates
+  when:
+     "{{ item.rc==1 }}"
+  loop: "{{ stat_virsh_network.results }}"
+  tags: create-network

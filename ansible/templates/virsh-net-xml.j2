@@ -1,0 +1,20 @@
+<network>
+  <name>{{ item.name }}</name>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='{{ item.name }}br' stp='on' delay='0'/>
+  <domain name='{{ item.name }}' localOnly='yes'/>
+  <dns>
+    <host ip='{{ item.network | ansible.utils.ipaddr("1") | ansible.utils.ipaddr("address") }}'>
+      <hostname>gateway</hostname>
+  </host>
+  </dns>
+  <ip address='{{ item.network | ansible.utils.ipaddr("1") | ansible.utils.ipaddr("address") }}' netmask='{{ item.network | ansible.utils.ipaddr("netmask") }}' localPtr='yes'>
+    <dhcp>
+      <range start='{{ item.network | ansible.utils.ipaddr("2") | ansible.utils.ipaddr("address") }}' end='{{ item.network | ansible.utils.ipaddr("-2") | ansible.utils.ipaddr("address") }}'/>
+    </dhcp>
+  </ip>
+</network>

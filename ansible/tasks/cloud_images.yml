@@ -32,7 +32,7 @@
   loop: "{{ server_roles | subelements('count') }}"
 
   
-- name: create disk
+- name: create disk if not exists
   shell: |
     qemu-img create -b /var/lib/libvirt/source_images/{{ item.item.0.image }} \
     -F "{{ item.item.0.image_format }}" \

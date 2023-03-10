@@ -16,7 +16,7 @@
   tags:
     - get_virsh_info
 
-- name: List of new VMS
+- name: List of created VMS
   debug:
     msg: "{{ create_vms }}"
   tags:

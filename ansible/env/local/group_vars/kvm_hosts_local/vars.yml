@@ -14,7 +14,7 @@ server_roles:
     vcpu: 2
     ram: 2048
     size: 20G
-    network: default
+    network: k8s_net
     count: "{{ range(1,2) }}"
   - name: worker
     image: Fedora-Cloud-Base-37-1.7.x86_64.qcow2
@@ -23,7 +23,7 @@ server_roles:
     vcpu: 2
     ram: 3584
     size: 35G
-    network: default
+    network: k8s_net
     count: "{{ range(1,3) }}"
 
 images_urls_dict:
@@ -35,3 +35,7 @@ images_urls_dict:
     url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.qcow2
     dest: /var/lib/libvirt/source_images
     format: qcow2
+
+virsh_network:
+  - name: k8s_net
+    network: 11.0.0.0/24

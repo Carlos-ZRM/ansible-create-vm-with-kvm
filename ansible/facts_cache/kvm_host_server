@@ -3,38 +3,35 @@
     "ansible_all_ipv4_addresses": [
         "192.168.122.1",
         "192.168.130.1",
-        "10.28.109.29"
+        "192.168.1.9"
     ],
     "ansible_all_ipv6_addresses": [
-        "fe80::64a5:b726:cb32:72eb"
+        "fe80::e0db:670f:723e:b180"
     ],
     "ansible_apparmor": {
         "status": "disabled"
     },
     "ansible_architecture": "x86_64",
-    "ansible_bios_date": "02/14/2022",
-    "ansible_bios_vendor": "LENOVO",
-    "ansible_bios_version": "EFCN54WW",
-    "ansible_board_asset_tag": "NO Asset Tag",
-    "ansible_board_name": "LNVNB161216",
-    "ansible_board_serial": "PF24ESK1",
-    "ansible_board_vendor": "LENOVO",
-    "ansible_board_version": "SDK0J40700 WIN",
-    "ansible_chassis_asset_tag": "NO Asset Tag",
-    "ansible_chassis_serial": "PF24ESK1",
-    "ansible_chassis_vendor": "LENOVO",
-    "ansible_chassis_version": "Lenovo Legion 5 15IMH05H",
+    "ansible_bios_date": "10/29/2020",
+    "ansible_bios_vendor": "American Megatrends Inc.",
+    "ansible_bios_version": "A.40",
+    "ansible_board_asset_tag": "To be filled by O.E.M.",
+    "ansible_board_name": "MAG B550 TOMAHAWK (MS-7C91)",
+    "ansible_board_serial": "K716956237",
+    "ansible_board_vendor": "Micro-Star International Co., Ltd.",
+    "ansible_board_version": "2.0",
+    "ansible_chassis_asset_tag": "To be filled by O.E.M.",
+    "ansible_chassis_serial": "To be filled by O.E.M.",
+    "ansible_chassis_vendor": "Micro-Star International Co., Ltd.",
+    "ansible_chassis_version": "2.0",
     "ansible_cmdline": {
-        "BOOT_IMAGE": "(hd0,gpt7)/boot/vmlinuz-5.14.0-162.18.1.el9_1.x86_64",
-        "acpi_backlight": "vendor",
-        "crashkernel": "1G-4G:192M,4G-64G:256M,64G-:512M",
-        "nosmt": true,
+        "BOOT_IMAGE": "(hd1,gpt6)/vmlinuz-4.18.0-425.3.1.el8.x86_64",
+        "crashkernel": "auto",
         "quiet": true,
-        "rd.driver.blacklist": "nouveau",
-        "resume": "UUID=3e4a6ba6-3959-42f0-ad92-d875bb1c8527",
+        "resume": "UUID=6adc8d5a-62ef-4866-8fcd-28b11f1167c7",
         "rhgb": true,
         "ro": true,
-        "root": "UUID=321de6b3-d092-4821-b2a3-f23df57ed1d5"
+        "root": "UUID=32d0e878-d549-495b-9e35-87919759e313"
     },
     "ansible_crc": {
         "active": false,
@@ -46,15 +43,10 @@
             "generic_receive_offload": "on",
             "generic_segmentation_offload": "on",
             "highdma": "on",
-            "hsr_dup_offload": "off [fixed]",
-            "hsr_fwd_offload": "off [fixed]",
-            "hsr_tag_ins_offload": "off [fixed]",
-            "hsr_tag_rm_offload": "off [fixed]",
             "hw_tc_offload": "off [fixed]",
             "l2_fwd_offload": "off [fixed]",
             "large_receive_offload": "off [fixed]",
             "loopback": "off [fixed]",
-            "macsec_hw_offload": "off [fixed]",
             "netns_local": "on [fixed]",
             "ntuple_filters": "off [fixed]",
             "receive_hashing": "off [fixed]",
@@ -125,37 +117,37 @@
         "type": "bridge"
     },
     "ansible_date_time": {
-        "date": "2023-03-07",
-        "day": "07",
-        "epoch": "1678217155",
-        "epoch_int": "1678217155",
-        "hour": "13",
-        "iso8601": "2023-03-07T19:25:55Z",
-        "iso8601_basic": "20230307T132555557308",
-        "iso8601_basic_short": "20230307T132555",
-        "iso8601_micro": "2023-03-07T19:25:55.557308Z",
-        "minute": "25",
-        "month": "03",
-        "second": "55",
-        "time": "13:25:55",
+        "date": "2023-01-19",
+        "day": "19",
+        "epoch": "1674139286",
+        "epoch_int": "1674139286",
+        "hour": "08",
+        "iso8601": "2023-01-19T14:41:26Z",
+        "iso8601_basic": "20230119T084126342660",
+        "iso8601_basic_short": "20230119T084126",
+        "iso8601_micro": "2023-01-19T14:41:26.342660Z",
+        "minute": "41",
+        "month": "01",
+        "second": "26",
+        "time": "08:41:26",
         "tz": "CST",
         "tz_dst": "CST",
         "tz_offset": "-0600",
-        "weekday": "Tuesday",
-        "weekday_number": "2",
-        "weeknumber": "10",
+        "weekday": "Thursday",
+        "weekday_number": "4",
+        "weeknumber": "03",
         "year": "2023"
     },
     "ansible_default_ipv4": {
-        "address": "10.28.109.29",
-        "alias": "wlp0s20f3",
-        "broadcast": "10.28.109.255",
-        "gateway": "10.28.109.1",
-        "interface": "wlp0s20f3",
-        "macaddress": "8c:8d:28:37:df:7f",
+        "address": "192.168.1.9",
+        "alias": "wlp5s0",
+        "broadcast": "192.168.1.255",
+        "gateway": "192.168.1.1",
+        "interface": "wlp5s0",
+        "macaddress": "a8:7e:ea:ed:79:f2",
         "mtu": 1500,
         "netmask": "255.255.255.0",
-        "network": "10.28.109.0",
+        "network": "192.168.1.0",
         "prefix": "24",
         "type": "ether"
     },
@@ -163,55 +155,102 @@
     "ansible_device_links": {
         "ids": {
             "nvme0n1": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K",
-                "nvme-eui.ace42e000a8569bb"
+                "nvme-WDS100T1X0E-00AFY0_214062801876",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4"
             ],
             "nvme0n1p1": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part1",
-                "nvme-eui.ace42e000a8569bb-part1"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part1",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part1",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part1"
             ],
             "nvme0n1p2": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part2",
-                "nvme-eui.ace42e000a8569bb-part2"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part2",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part2",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part2"
             ],
             "nvme0n1p3": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part3",
-                "nvme-eui.ace42e000a8569bb-part3"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part3",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part3",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part3"
             ],
             "nvme0n1p4": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part4",
-                "nvme-eui.ace42e000a8569bb-part4"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part4",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part4",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part4"
             ],
             "nvme0n1p5": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part5",
-                "nvme-eui.ace42e000a8569bb-part5"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part5",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part5",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part5"
             ],
             "nvme0n1p6": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part6",
-                "nvme-eui.ace42e000a8569bb-part6"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part6",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part6",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part6"
             ],
             "nvme0n1p7": [
-                "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part7",
-                "nvme-eui.ace42e000a8569bb-part7"
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part7",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part7",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part7"
+            ],
+            "nvme0n1p8": [
+                "nvme-WDS100T1X0E-00AFY0_214062801876-part8",
+                "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part8",
+                "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part8"
+            ],
+            "sda": [
+                "ata-ST2000DM008-2FR102_ZFL2MCNG",
+                "scsi-0ATA_ST2000DM008-2FR1_ZFL2MCNG",
+                "scsi-1ATA_ST2000DM008-2FR102_ZFL2MCNG",
+                "scsi-35000c500c6d2219b",
+                "scsi-SATA_ST2000DM008-2FR1_ZFL2MCNG",
+                "wwn-0x5000c500c6d2219b"
+            ],
+            "sda1": [
+                "ata-ST2000DM008-2FR102_ZFL2MCNG-part1",
+                "scsi-0ATA_ST2000DM008-2FR1_ZFL2MCNG-part1",
+                "scsi-1ATA_ST2000DM008-2FR102_ZFL2MCNG-part1",
+                "scsi-35000c500c6d2219b-part1",
+                "scsi-SATA_ST2000DM008-2FR1_ZFL2MCNG-part1",
+                "wwn-0x5000c500c6d2219b-part1"
             ]
         },
-        "labels": {},
+        "labels": {
+            "nvme0n1p5": [
+                "rpool"
+            ],
+            "sda1": [
+                "Data"
+            ]
+        },
         "masters": {},
         "uuids": {
             "nvme0n1p1": [
-                "EED1-06E5"
+                "4003-78B2"
+            ],
+            "nvme0n1p2": [
+                "2487627537045110093"
+            ],
+            "nvme0n1p3": [
+                "4CB0059AB0058BA0"
             ],
             "nvme0n1p4": [
-                "505D-AAA2"
+                "4E884B23884B08C3"
             ],
             "nvme0n1p5": [
-                "3e4a6ba6-3959-42f0-ad92-d875bb1c8527"
+                "592A-A2A1"
             ],
             "nvme0n1p6": [
-                "924A1FE84A1FC7BD"
+                "e8079770-d0f5-4f57-bc1e-3bf7432242f9"
             ],
             "nvme0n1p7": [
-                "321de6b3-d092-4821-b2a3-f23df57ed1d5"
+                "6adc8d5a-62ef-4866-8fcd-28b11f1167c7"
+            ],
+            "nvme0n1p8": [
+                "32d0e878-d549-495b-9e35-87919759e313"
+            ],
+            "sda1": [
+                "30C01C98C01C65FE"
             ]
         }
     },
@@ -231,10 +270,10 @@
             "rotational": "0",
             "sas_address": null,
             "sas_device_handle": null,
-            "scheduler_mode": "none",
-            "sectors": "8",
+            "scheduler_mode": "mq-deadline",
+            "sectors": "388288",
             "sectorsize": "512",
-            "size": "4.00 KB",
+            "size": "189.59 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -254,10 +293,10 @@
             "rotational": "0",
             "sas_address": null,
             "sas_device_handle": null,
-            "scheduler_mode": "none",
-            "sectors": "5907408",
+            "scheduler_mode": "mq-deadline",
+            "sectors": "101624",
             "sectorsize": "512",
-            "size": "2.82 GB",
+            "size": "49.62 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -277,10 +316,10 @@
             "rotational": "0",
             "sas_address": null,
             "sas_device_handle": null,
-            "scheduler_mode": "none",
-            "sectors": "238984",
+            "scheduler_mode": "mq-deadline",
+            "sectors": "113896",
             "sectorsize": "512",
-            "size": "116.69 MB",
+            "size": "55.61 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -300,10 +339,10 @@
             "rotational": "0",
             "sas_address": null,
             "sas_device_handle": null,
-            "scheduler_mode": "none",
-            "sectors": "129496",
+            "scheduler_mode": "mq-deadline",
+            "sectors": "533936",
             "sectorsize": "512",
-            "size": "63.23 MB",
+            "size": "260.71 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -323,7 +362,7 @@
             "rotational": "0",
             "sas_address": null,
             "sas_device_handle": null,
-            "scheduler_mode": "none",
+            "scheduler_mode": "mq-deadline",
             "sectors": "187776",
             "sectorsize": "512",
             "size": "91.69 MB",
@@ -346,7 +385,7 @@
             "rotational": "0",
             "sas_address": null,
             "sas_device_handle": null,
-            "scheduler_mode": "none",
+            "scheduler_mode": "mq-deadline",
             "sectors": "8",
             "sectorsize": "512",
             "size": "4.00 KB",
@@ -354,194 +393,181 @@
             "vendor": null,
             "virtual": 1
         },
-        "loop6": {
-            "holders": [],
-            "host": "",
-            "links": {
-                "ids": [],
-                "labels": [],
-                "masters": [],
-                "uuids": []
-            },
-            "model": null,
-            "partitions": {},
-            "removable": "0",
-            "rotational": "0",
-            "sas_address": null,
-            "sas_device_handle": null,
-            "scheduler_mode": "none",
-            "sectors": "818008",
-            "sectorsize": "512",
-            "size": "399.42 MB",
-            "support_discard": "4096",
-            "vendor": null,
-            "virtual": 1
-        },
-        "loop7": {
-            "holders": [],
-            "host": "",
-            "links": {
-                "ids": [],
-                "labels": [],
-                "masters": [],
-                "uuids": []
-            },
-            "model": null,
-            "partitions": {},
-            "removable": "0",
-            "rotational": "0",
-            "sas_address": null,
-            "sas_device_handle": null,
-            "scheduler_mode": "none",
-            "sectors": "101624",
-            "sectorsize": "512",
-            "size": "49.62 MB",
-            "support_discard": "4096",
-            "vendor": null,
-            "virtual": 1
-        },
         "nvme0n1": {
             "holders": [],
-            "host": "Non-Volatile memory controller: SK hynix BC511",
+            "host": "Non-Volatile memory controller: Sandisk Corp WD PC SN810 / Black SN850 NVMe SSD (rev 01)",
             "links": {
                 "ids": [
-                    "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K",
-                    "nvme-eui.ace42e000a8569bb"
+                    "nvme-WDS100T1X0E-00AFY0_214062801876",
+                    "nvme-eui.e8238fa6bf530001001b448b4128a5b4"
                 ],
                 "labels": [],
                 "masters": [],
                 "uuids": []
             },
-            "model": "SKHynix_HFM512GDHTNI-87A0B",
+            "model": "WDS100T1X0E-00AFY0",
             "partitions": {
                 "nvme0n1p1": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part1",
-                            "nvme-eui.ace42e000a8569bb-part1"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part1",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part1",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part1"
                         ],
                         "labels": [],
                         "masters": [],
                         "uuids": [
-                            "EED1-06E5"
+                            "4003-78B2"
                         ]
                     },
                     "sectors": "204800",
                     "sectorsize": 512,
                     "size": "100.00 MB",
                     "start": "2048",
-                    "uuid": "EED1-06E5"
+                    "uuid": "4003-78B2"
                 },
                 "nvme0n1p2": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part2",
-                            "nvme-eui.ace42e000a8569bb-part2"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part2",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part2",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part2"
                         ],
                         "labels": [],
                         "masters": [],
-                        "uuids": []
+                        "uuids": [
+                            "2487627537045110093"
+                        ]
                     },
                     "sectors": "32768",
                     "sectorsize": 512,
                     "size": "16.00 MB",
                     "start": "206848",
-                    "uuid": null
+                    "uuid": "2487627537045110093"
                 },
                 "nvme0n1p3": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part3",
-                            "nvme-eui.ace42e000a8569bb-part3"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part3",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part3",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part3"
                         ],
                         "labels": [],
                         "masters": [],
-                        "uuids": []
+                        "uuids": [
+                            "4CB0059AB0058BA0"
+                        ]
                     },
-                    "sectors": "578637073",
+                    "sectors": "693947021",
                     "sectorsize": 512,
-                    "size": "275.92 GB",
+                    "size": "330.90 GB",
                     "start": "239616",
-                    "uuid": null
+                    "uuid": "4CB0059AB0058BA0"
                 },
                 "nvme0n1p4": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part4",
-                            "nvme-eui.ace42e000a8569bb-part4"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part4",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part4",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part4"
                         ],
                         "labels": [],
                         "masters": [],
                         "uuids": [
-                            "505D-AAA2"
+                            "4E884B23884B08C3"
                         ]
                     },
-                    "sectors": "1228800",
+                    "sectors": "1042432",
                     "sectorsize": 512,
-                    "size": "600.00 MB",
-                    "start": "578877440",
-                    "uuid": "505D-AAA2"
+                    "size": "509.00 MB",
+                    "start": "1952479232",
+                    "uuid": "4E884B23884B08C3"
                 },
                 "nvme0n1p5": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part5",
-                            "nvme-eui.ace42e000a8569bb-part5"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part5",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part5",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part5"
                         ],
-                        "labels": [],
+                        "labels": [
+                            "rpool"
+                        ],
                         "masters": [],
                         "uuids": [
-                            "3e4a6ba6-3959-42f0-ad92-d875bb1c8527"
+                            "592A-A2A1"
                         ]
                     },
-                    "sectors": "50331648",
+                    "sectors": "1228800",
                     "sectorsize": 512,
-                    "size": "24.00 GB",
-                    "start": "580106240",
-                    "uuid": "3e4a6ba6-3959-42f0-ad92-d875bb1c8527"
+                    "size": "600.00 MB",
+                    "start": "694188032",
+                    "uuid": "592A-A2A1"
                 },
                 "nvme0n1p6": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part6",
-                            "nvme-eui.ace42e000a8569bb-part6"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part6",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part6",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part6"
                         ],
                         "labels": [],
                         "masters": [],
                         "uuids": [
-                            "924A1FE84A1FC7BD"
+                            "e8079770-d0f5-4f57-bc1e-3bf7432242f9"
                         ]
                     },
-                    "sectors": "1902592",
+                    "sectors": "4194304",
                     "sectorsize": 512,
-                    "size": "929.00 MB",
-                    "start": "998307840",
-                    "uuid": "924A1FE84A1FC7BD"
+                    "size": "2.00 GB",
+                    "start": "695416832",
+                    "uuid": "e8079770-d0f5-4f57-bc1e-3bf7432242f9"
                 },
                 "nvme0n1p7": {
                     "holders": [],
                     "links": {
                         "ids": [
-                            "nvme-SKHynix_HFM512GDHTNI-87A0B_CY0AN00061150A25K-part7",
-                            "nvme-eui.ace42e000a8569bb-part7"
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part7",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part7",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part7"
                         ],
                         "labels": [],
                         "masters": [],
                         "uuids": [
-                            "321de6b3-d092-4821-b2a3-f23df57ed1d5"
+                            "6adc8d5a-62ef-4866-8fcd-28b11f1167c7"
                         ]
                     },
-                    "sectors": "367869952",
+                    "sectors": "100663296",
                     "sectorsize": 512,
-                    "size": "175.41 GB",
-                    "start": "630437888",
-                    "uuid": "321de6b3-d092-4821-b2a3-f23df57ed1d5"
+                    "size": "48.00 GB",
+                    "start": "699611136",
+                    "uuid": "6adc8d5a-62ef-4866-8fcd-28b11f1167c7"
+                },
+                "nvme0n1p8": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-WDS100T1X0E-00AFY0_214062801876-part8",
+                            "nvme-eui.e8238fa6bf530001001b448b4128a5b4-part8",
+                            "wwn-eui.e8238fa6bf530001001b448b4128a5b4-part8"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "32d0e878-d549-495b-9e35-87919759e313"
+                        ]
+                    },
+                    "sectors": "1152204800",
+                    "sectorsize": 512,
+                    "size": "549.41 GB",
+                    "start": "800274432",
+                    "uuid": "32d0e878-d549-495b-9e35-87919759e313"
                 }
             },
             "removable": "0",
@@ -549,13 +575,71 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "none",
-            "sectors": "1000215216",
+            "sectors": "1953525168",
             "sectorsize": "512",
-            "serial": "CY0AN00061150A25K",
-            "size": "476.94 GB",
+            "serial": "214062801876",
+            "size": "931.51 GB",
             "support_discard": "512",
             "vendor": null,
             "virtual": 1
+        },
+        "sda": {
+            "holders": [],
+            "host": "SATA controller: Advanced Micro Devices, Inc. [AMD] 500 Series Chipset SATA Controller",
+            "links": {
+                "ids": [
+                    "ata-ST2000DM008-2FR102_ZFL2MCNG",
+                    "scsi-0ATA_ST2000DM008-2FR1_ZFL2MCNG",
+                    "scsi-1ATA_ST2000DM008-2FR102_ZFL2MCNG",
+                    "scsi-35000c500c6d2219b",
+                    "scsi-SATA_ST2000DM008-2FR1_ZFL2MCNG",
+                    "wwn-0x5000c500c6d2219b"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "ST2000DM008-2FR1",
+            "partitions": {
+                "sda1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "ata-ST2000DM008-2FR102_ZFL2MCNG-part1",
+                            "scsi-0ATA_ST2000DM008-2FR1_ZFL2MCNG-part1",
+                            "scsi-1ATA_ST2000DM008-2FR102_ZFL2MCNG-part1",
+                            "scsi-35000c500c6d2219b-part1",
+                            "scsi-SATA_ST2000DM008-2FR1_ZFL2MCNG-part1",
+                            "wwn-0x5000c500c6d2219b-part1"
+                        ],
+                        "labels": [
+                            "Data"
+                        ],
+                        "masters": [],
+                        "uuids": [
+                            "30C01C98C01C65FE"
+                        ]
+                    },
+                    "sectors": "1222670336",
+                    "sectorsize": 512,
+                    "size": "583.01 GB",
+                    "start": "2684356608",
+                    "uuid": "30C01C98C01C65FE"
+                }
+            },
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "3907029168",
+            "sectorsize": "512",
+            "serial": "ZFL2MCNG",
+            "size": "1.82 TB",
+            "support_discard": "4096",
+            "vendor": "ATA",
+            "virtual": 1,
+            "wwn": "0x5000c500c6d2219b"
         }
     },
     "ansible_distribution": "RedHat",
@@ -563,9 +647,9 @@
     "ansible_distribution_file_path": "/etc/redhat-release",
     "ansible_distribution_file_search_string": "Red Hat",
     "ansible_distribution_file_variety": "RedHat",
-    "ansible_distribution_major_version": "9",
-    "ansible_distribution_release": "Plow",
-    "ansible_distribution_version": "9.1",
+    "ansible_distribution_major_version": "8",
+    "ansible_distribution_release": "Ootpa",
+    "ansible_distribution_version": "8.7",
     "ansible_dns": {
         "nameservers": [
             "127.0.0.1"
@@ -573,14 +657,17 @@
         "options": {
             "edns0": true,
             "trust-ad": true
-        }
+        },
+        "search": [
+            "server"
+        ]
     },
-    "ansible_domain": "localdomain",
+    "ansible_domain": "server",
     "ansible_effective_group_id": 0,
     "ansible_effective_user_id": 0,
-    "ansible_enp7s0": {
+    "ansible_enp42s0": {
         "active": false,
-        "device": "enp7s0",
+        "device": "enp42s0",
         "features": {
             "esp_hw_offload": "off [fixed]",
             "esp_tx_csum_hw_offload": "off [fixed]",
@@ -588,15 +675,10 @@
             "generic_receive_offload": "on",
             "generic_segmentation_offload": "off [requested on]",
             "highdma": "on [fixed]",
-            "hsr_dup_offload": "off [fixed]",
-            "hsr_fwd_offload": "off [fixed]",
-            "hsr_tag_ins_offload": "off [fixed]",
-            "hsr_tag_rm_offload": "off [fixed]",
             "hw_tc_offload": "off [fixed]",
             "l2_fwd_offload": "off [fixed]",
             "large_receive_offload": "off [fixed]",
             "loopback": "off [fixed]",
-            "macsec_hw_offload": "off [fixed]",
             "netns_local": "off [fixed]",
             "ntuple_filters": "off [fixed]",
             "receive_hashing": "off [fixed]",
@@ -649,10 +731,85 @@
             "vlan_challenged": "off [fixed]"
         },
         "hw_timestamp_filters": [],
-        "macaddress": "54:05:db:da:d9:d9",
+        "macaddress": "2c:f0:5d:76:83:14",
         "module": "r8169",
         "mtu": 1500,
-        "pciid": "0000:07:00.0",
+        "pciid": "0000:2a:00.0",
+        "promisc": false,
+        "speed": -1,
+        "timestamping": [],
+        "type": "ether"
+    },
+    "ansible_enp6s0": {
+        "active": false,
+        "device": "enp6s0",
+        "features": {
+            "esp_hw_offload": "off [fixed]",
+            "esp_tx_csum_hw_offload": "off [fixed]",
+            "fcoe_mtu": "off [fixed]",
+            "generic_receive_offload": "on",
+            "generic_segmentation_offload": "off [requested on]",
+            "highdma": "on [fixed]",
+            "hw_tc_offload": "off [fixed]",
+            "l2_fwd_offload": "off [fixed]",
+            "large_receive_offload": "off [fixed]",
+            "loopback": "off [fixed]",
+            "netns_local": "off [fixed]",
+            "ntuple_filters": "off [fixed]",
+            "receive_hashing": "off [fixed]",
+            "rx_all": "off",
+            "rx_checksumming": "on",
+            "rx_fcs": "off",
+            "rx_gro_hw": "off [fixed]",
+            "rx_gro_list": "off",
+            "rx_udp_gro_forwarding": "off",
+            "rx_udp_tunnel_port_offload": "off [fixed]",
+            "rx_vlan_filter": "off [fixed]",
+            "rx_vlan_offload": "on",
+            "rx_vlan_stag_filter": "off [fixed]",
+            "rx_vlan_stag_hw_parse": "off [fixed]",
+            "scatter_gather": "off",
+            "tcp_segmentation_offload": "off",
+            "tls_hw_record": "off [fixed]",
+            "tls_hw_rx_offload": "off [fixed]",
+            "tls_hw_tx_offload": "off [fixed]",
+            "tx_checksum_fcoe_crc": "off [fixed]",
+            "tx_checksum_ip_generic": "off [fixed]",
+            "tx_checksum_ipv4": "on",
+            "tx_checksum_ipv6": "on",
+            "tx_checksum_sctp": "off [fixed]",
+            "tx_checksumming": "on",
+            "tx_esp_segmentation": "off [fixed]",
+            "tx_fcoe_segmentation": "off [fixed]",
+            "tx_gre_csum_segmentation": "off [fixed]",
+            "tx_gre_segmentation": "off [fixed]",
+            "tx_gso_list": "off [fixed]",
+            "tx_gso_partial": "off [fixed]",
+            "tx_gso_robust": "off [fixed]",
+            "tx_ipxip4_segmentation": "off [fixed]",
+            "tx_ipxip6_segmentation": "off [fixed]",
+            "tx_lockless": "off [fixed]",
+            "tx_nocache_copy": "off",
+            "tx_scatter_gather": "off",
+            "tx_scatter_gather_fraglist": "off [fixed]",
+            "tx_sctp_segmentation": "off [fixed]",
+            "tx_tcp6_segmentation": "off",
+            "tx_tcp_ecn_segmentation": "off [fixed]",
+            "tx_tcp_mangleid_segmentation": "off",
+            "tx_tcp_segmentation": "off",
+            "tx_tunnel_remcsum_segmentation": "off [fixed]",
+            "tx_udp_segmentation": "off [fixed]",
+            "tx_udp_tnl_csum_segmentation": "off [fixed]",
+            "tx_udp_tnl_segmentation": "off [fixed]",
+            "tx_vlan_offload": "on",
+            "tx_vlan_stag_hw_insert": "off [fixed]",
+            "vlan_challenged": "off [fixed]"
+        },
+        "hw_timestamp_filters": [],
+        "macaddress": "2c:f0:5d:76:83:15",
+        "module": "r8169",
+        "mtu": 1500,
+        "pciid": "0000:06:00.0",
         "promisc": false,
         "speed": -1,
         "timestamping": [],
@@ -661,39 +818,39 @@
     "ansible_env": {
         "HOME": "/root",
         "LANG": "en_US.utf8",
-        "LANGUAGE": "en_US.utf8",
         "LOGNAME": "root",
-        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:",
+        "LS_COLORS": "rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:",
         "MAIL": "/var/mail/root",
         "PATH": "/sbin:/bin:/usr/sbin:/usr/bin",
-        "PWD": "/home/carlos_xpk_2bc",
+        "PWD": "/home/carlosxpk",
         "SHELL": "/bin/bash",
-        "SHLVL": "0",
-        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-azouwjwkadqkumsnjayedplpiyiojaxs ; /usr/bin/python3 /home/carlos_xpk_2bc/.ansible/tmp/ansible-tmp-1678217150.4268062-36441-20919570675177/AnsiballZ_setup.py",
+        "SHLVL": "1",
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-ogqcsoxgsrwjfkweocsijrsjhsfgtuty ; /usr/libexec/platform-python /home/carlosxpk/.ansible/tmp/ansible-tmp-1674139285.6459453-1304228-112980620709683/AnsiballZ_setup.py",
         "SUDO_GID": "1000",
         "SUDO_UID": "1000",
-        "SUDO_USER": "carlos_xpk_2bc",
+        "SUDO_USER": "carlosxpk",
         "TERM": "xterm-256color",
         "USER": "root",
-        "_": "/usr/bin/python3"
+        "_": "/usr/libexec/platform-python"
     },
     "ansible_fibre_channel_wwn": [],
     "ansible_fips": false,
-    "ansible_form_factor": "Notebook",
-    "ansible_fqdn": "localhost.localdomain",
+    "ansible_form_factor": "Desktop",
+    "ansible_fqdn": "carlosxpk.server",
     "ansible_hostname": "carlosxpk",
-    "ansible_hostnqn": "nqn.2014-08.org.nvmexpress:uuid:bbd1ac98-1f11-11eb-80e8-5405dbdad9d9",
+    "ansible_hostnqn": "nqn.2014-08.org.nvmexpress:uuid:68a89b58-ecac-9b1d-aadc-2cf05d768315",
     "ansible_interfaces": [
-        "lo",
-        "wlp0s20f3",
         "virbr0",
+        "enp6s0",
         "crc",
-        "enp7s0"
+        "lo",
+        "enp42s0",
+        "wlp5s0"
     ],
     "ansible_is_chroot": false,
-    "ansible_iscsi_iqn": "",
-    "ansible_kernel": "5.14.0-162.18.1.el9_1.x86_64",
-    "ansible_kernel_version": "#1 SMP PREEMPT_DYNAMIC Thu Feb 9 04:28:41 EST 2023",
+    "ansible_iscsi_iqn": "iqn.1994-05.com.redhat:723721b58023",
+    "ansible_kernel": "4.18.0-425.3.1.el8.x86_64",
+    "ansible_kernel_version": "#1 SMP Fri Sep 30 11:45:06 EDT 2022",
     "ansible_lo": {
         "active": true,
         "device": "lo",
@@ -704,15 +861,10 @@
             "generic_receive_offload": "on",
             "generic_segmentation_offload": "on",
             "highdma": "on [fixed]",
-            "hsr_dup_offload": "off [fixed]",
-            "hsr_fwd_offload": "off [fixed]",
-            "hsr_tag_ins_offload": "off [fixed]",
-            "hsr_tag_rm_offload": "off [fixed]",
             "hw_tc_offload": "off [fixed]",
             "l2_fwd_offload": "off [fixed]",
             "large_receive_offload": "off [fixed]",
             "loopback": "on [fixed]",
-            "macsec_hw_offload": "off [fixed]",
             "netns_local": "on [fixed]",
             "ntuple_filters": "off [fixed]",
             "receive_hashing": "off [fixed]",
@@ -785,9 +937,9 @@
         "type": "loopback"
     },
     "ansible_loadavg": {
-        "15m": 0.73,
-        "1m": 0.76,
-        "5m": 0.54
+        "15m": 0.11,
+        "1m": 0.42,
+        "5m": 0.27
     },
     "ansible_local": {},
     "ansible_lsb": {},
@@ -797,105 +949,137 @@
         "vgs": {}
     },
     "ansible_machine": "x86_64",
-    "ansible_machine_id": "4cbda942442e4dc99ecf8c29ec410e2e",
-    "ansible_memfree_mb": 6501,
+    "ansible_machine_id": "ef61953e083549adbbbd9447fbd2399a",
+    "ansible_memfree_mb": 28519,
     "ansible_memory_mb": {
         "nocache": {
-            "free": 9843,
-            "used": 5796
+            "free": 29895,
+            "used": 1980
         },
         "real": {
-            "free": 6501,
-            "total": 15639,
-            "used": 9138
+            "free": 28519,
+            "total": 31875,
+            "used": 3356
         },
         "swap": {
             "cached": 0,
-            "free": 24575,
-            "total": 24575,
+            "free": 49151,
+            "total": 49151,
             "used": 0
         }
     },
-    "ansible_memtotal_mb": 15639,
+    "ansible_memtotal_mb": 31875,
     "ansible_mounts": [
         {
-            "block_available": 6172283,
+            "block_available": 118630173,
             "block_size": 4096,
-            "block_total": 45961291,
-            "block_used": 39789008,
-            "device": "/dev/nvme0n1p7",
+            "block_total": 143955275,
+            "block_used": 25325102,
+            "device": "/dev/nvme0n1p8",
             "fstype": "xfs",
-            "inode_available": 49385163,
-            "inode_total": 50778648,
-            "inode_used": 1393485,
+            "inode_available": 287730280,
+            "inode_total": 288051200,
+            "inode_used": 320920,
             "mount": "/",
             "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
-            "size_available": 25281671168,
-            "size_total": 188257447936,
-            "uuid": "321de6b3-d092-4821-b2a3-f23df57ed1d5"
+            "size_available": 485909188608,
+            "size_total": 589640806400,
+            "uuid": "32d0e878-d549-495b-9e35-87919759e313"
+        },
+        {
+            "block_available": 391274,
+            "block_size": 4096,
+            "block_total": 521728,
+            "block_used": 130454,
+            "device": "/dev/nvme0n1p6",
+            "fstype": "xfs",
+            "inode_available": 1048479,
+            "inode_total": 1048576,
+            "inode_used": 97,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 1602658304,
+            "size_total": 2136997888,
+            "uuid": "e8079770-d0f5-4f57-bc1e-3bf7432242f9"
         },
         {
             "block_available": 0,
             "block_size": 131072,
-            "block_total": 1,
-            "block_used": 1,
+            "block_total": 1517,
+            "block_used": 1517,
             "device": "/dev/loop0",
             "fstype": "squashfs",
             "inode_available": 0,
-            "inode_total": 29,
-            "inode_used": 29,
-            "mount": "/var/lib/snapd/snap/bare/5",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
+            "inode_total": 15929,
+            "inode_used": 15929,
+            "mount": "/var/lib/snapd/snap/calibre/1",
+            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime",
             "size_available": 0,
-            "size_total": 131072,
+            "size_total": 198836224,
             "uuid": "N/A"
         },
         {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 1,
-            "block_used": 1,
-            "device": "/dev/loop5",
-            "fstype": "squashfs",
+            "block_available": 151822,
+            "block_size": 4096,
+            "block_total": 153296,
+            "block_used": 1474,
+            "device": "/dev/nvme0n1p5",
+            "fstype": "vfat",
             "inode_available": 0,
-            "inode_total": 6,
-            "inode_used": 6,
-            "mount": "/var/lib/snapd/snap/mtx-synapse/4",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
-            "size_available": 0,
-            "size_total": 131072,
-            "uuid": "N/A"
+            "inode_total": 0,
+            "inode_used": 0,
+            "mount": "/boot/efi",
+            "options": "rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro",
+            "size_available": 621862912,
+            "size_total": 627900416,
+            "uuid": "592A-A2A1"
         },
         {
             "block_available": 0,
             "block_size": 131072,
-            "block_total": 934,
-            "block_used": 934,
-            "device": "/dev/loop2",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 12857,
-            "inode_used": 12857,
-            "mount": "/var/lib/snapd/snap/core/14399",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
-            "size_available": 0,
-            "size_total": 122421248,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 23076,
-            "block_used": 23076,
+            "block_total": 397,
+            "block_used": 397,
             "device": "/dev/loop1",
             "fstype": "squashfs",
             "inode_available": 0,
-            "inode_total": 570187,
-            "inode_used": 570187,
-            "mount": "/mnt/2b",
-            "options": "ro,seclabel,relatime,errors=continue",
+            "inode_total": 491,
+            "inode_used": 491,
+            "mount": "/var/lib/snapd/snap/snapd/17883",
+            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime",
             "size_available": 0,
-            "size_total": 3024617472,
+            "size_total": 52035584,
+            "uuid": "N/A"
+        },
+        {
+            "block_available": 0,
+            "block_size": 131072,
+            "block_total": 445,
+            "block_used": 445,
+            "device": "/dev/loop2",
+            "fstype": "squashfs",
+            "inode_available": 0,
+            "inode_total": 10877,
+            "inode_used": 10877,
+            "mount": "/var/lib/snapd/snap/core18/2654",
+            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime",
+            "size_available": 0,
+            "size_total": 58327040,
+            "uuid": "N/A"
+        },
+        {
+            "block_available": 0,
+            "block_size": 131072,
+            "block_total": 2086,
+            "block_used": 2086,
+            "device": "/dev/loop3",
+            "fstype": "squashfs",
+            "inode_available": 0,
+            "inode_total": 35005,
+            "inode_used": 35005,
+            "mount": "/var/lib/snapd/snap/kde-frameworks-5-core18/32",
+            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime",
+            "size_available": 0,
+            "size_total": 273416192,
             "uuid": "N/A"
         },
         {
@@ -909,7 +1093,7 @@
             "inode_total": 76208,
             "inode_used": 76208,
             "mount": "/var/lib/snapd/snap/gtk-common-themes/1535",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
+            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime",
             "size_available": 0,
             "size_total": 96206848,
             "uuid": "N/A"
@@ -917,126 +1101,111 @@
         {
             "block_available": 0,
             "block_size": 131072,
-            "block_total": 3196,
-            "block_used": 3196,
-            "device": "/dev/loop6",
+            "block_total": 1,
+            "block_used": 1,
+            "device": "/dev/loop5",
             "fstype": "squashfs",
             "inode_available": 0,
-            "inode_total": 6934,
-            "inode_used": 6934,
-            "mount": "/var/lib/snapd/snap/obs-studio/1284",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
+            "inode_total": 29,
+            "inode_used": 29,
+            "mount": "/var/lib/snapd/snap/bare/5",
+            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime",
             "size_available": 0,
-            "size_total": 418906112,
+            "size_total": 131072,
             "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 506,
-            "block_used": 506,
-            "device": "/dev/loop3",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 11897,
-            "inode_used": 11897,
-            "mount": "/var/lib/snapd/snap/core20/1738",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
-            "size_available": 0,
-            "size_total": 66322432,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 397,
-            "block_used": 397,
-            "device": "/dev/loop7",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 491,
-            "inode_used": 491,
-            "mount": "/var/lib/snapd/snap/snapd/17883",
-            "options": "ro,context=system_u:object_r:snappy_snap_t:s0,nodev,relatime,errors=continue",
-            "size_available": 0,
-            "size_total": 52035584,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 151513,
-            "block_size": 4096,
-            "block_total": 153296,
-            "block_used": 1783,
-            "device": "/dev/nvme0n1p4",
-            "fstype": "vfat",
-            "inode_available": 0,
-            "inode_total": 0,
-            "inode_used": 0,
-            "mount": "/boot/efi",
-            "options": "rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro",
-            "size_available": 620597248,
-            "size_total": 627900416,
-            "uuid": "505D-AAA2"
         }
     ],
-    "ansible_nodename": "carlosxpk",
+    "ansible_nodename": "carlosxpk.server",
     "ansible_os_family": "RedHat",
     "ansible_pkg_mgr": "dnf",
     "ansible_proc_cmdline": {
-        "BOOT_IMAGE": "(hd0,gpt7)/boot/vmlinuz-5.14.0-162.18.1.el9_1.x86_64",
-        "acpi_backlight": "vendor",
-        "crashkernel": "1G-4G:192M,4G-64G:256M,64G-:512M",
-        "nosmt": true,
+        "BOOT_IMAGE": "(hd1,gpt6)/vmlinuz-4.18.0-425.3.1.el8.x86_64",
+        "crashkernel": "auto",
         "quiet": true,
-        "rd.driver.blacklist": "nouveau",
-        "resume": "UUID=3e4a6ba6-3959-42f0-ad92-d875bb1c8527",
+        "resume": "UUID=6adc8d5a-62ef-4866-8fcd-28b11f1167c7",
         "rhgb": true,
         "ro": true,
-        "root": "UUID=321de6b3-d092-4821-b2a3-f23df57ed1d5"
+        "root": "UUID=32d0e878-d549-495b-9e35-87919759e313"
     },
     "ansible_processor": [
         "0",
-        "GenuineIntel",
-        "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
         "1",
-        "GenuineIntel",
-        "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
         "2",
-        "GenuineIntel",
-        "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
         "3",
-        "GenuineIntel",
-        "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz"
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "4",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "5",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "6",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "7",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "8",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "9",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "10",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "11",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "12",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "13",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "14",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor",
+        "15",
+        "AuthenticAMD",
+        "AMD Ryzen 7 3700X 8-Core Processor"
     ],
-    "ansible_processor_cores": 4,
+    "ansible_processor_cores": 8,
     "ansible_processor_count": 1,
-    "ansible_processor_nproc": 4,
-    "ansible_processor_threads_per_core": 1,
-    "ansible_processor_vcpus": 4,
-    "ansible_product_name": "81Y6",
-    "ansible_product_serial": "PF24ESK1",
-    "ansible_product_uuid": "bbd1ac98-1f11-11eb-80e8-5405dbdad9d9",
-    "ansible_product_version": "Lenovo Legion 5 15IMH05H",
+    "ansible_processor_nproc": 16,
+    "ansible_processor_threads_per_core": 2,
+    "ansible_processor_vcpus": 16,
+    "ansible_product_name": "MS-7C91",
+    "ansible_product_serial": "To be filled by O.E.M.",
+    "ansible_product_uuid": "68a89b58-ecac-9b1d-aadc-2cf05d768315",
+    "ansible_product_version": "2.0",
     "ansible_python": {
-        "executable": "/usr/bin/python3",
+        "executable": "/usr/libexec/platform-python",
         "has_sslcontext": true,
         "type": "cpython",
         "version": {
             "major": 3,
-            "micro": 14,
-            "minor": 9,
+            "micro": 8,
+            "minor": 6,
             "releaselevel": "final",
             "serial": 0
         },
         "version_info": [
             3,
-            9,
-            14,
+            6,
+            8,
             "final",
             0
         ]
     },
-    "ansible_python_version": "3.9.14",
+    "ansible_python_version": "3.6.8",
     "ansible_real_group_id": 0,
     "ansible_real_user_id": 0,
     "ansible_selinux": {
@@ -1048,19 +1217,19 @@
     },
     "ansible_selinux_python_present": true,
     "ansible_service_mgr": "systemd",
-    "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDQHyI/G4e2MnZjNtuBacleXywE0c0oBlyv5bXV3tPbpaxXlDoozLXg1LcRc81gnEPz+BC+BjYUvAs7jh8Wbcko=",
+    "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD+PEi1y+qxx6bASwCsARmF1qiiOwizq/vMfoWxiMllmFGNGiDDxtcolMmRji2i5Vx/rkneVdpY1f6R4UbOvNPU=",
     "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
-    "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAICx5sH9zMWgGO57BGBnrhYxMo8DB/G4v2/NOgVYDYcKv",
+    "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIOvqhm5SlzornEFh8nabiyUXdfEsBDIoXxgsuwgGcCYc",
     "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
-    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQCg1sM7O8FXe4m48CSZPaP81mxa2IcDdEQNtD5zz4tOnbwGkzfp7EBSQ3AyOBs0qQdiMutVD1E5Ez4pbwDyKLCwrP6fNaghLMzAf/hiLQheB+T0a3Yo4KiEJ25UWLQcEWuOgKcpmZAQR5YNk7WOgVTQ91zl9qmC88o9PP4RtjC1JT6xuBcoX/eT9dTi1ssWQBQJWei/cmGSHH3StPcjXGKuHA6w9cYP66PaPZZpdlH/v/6KtjUVK8Qo0bm9iLNIEgk2coy59hk5c4w9HDL1lpFuCMdEQOU2BChLr2G/DtbALB3fixkTzQjk/s5isbm6f+BmUDj9RiQiM7+paRnSBb8oUGpzwXW+FVJJcaHQfOUSvuZq7P3VgiVcDtUsfPk5YIjNNKDzMIiRWYq7ZVjqr34b35ISGHBB4A0l50d7lz7amEZwlf9VyjrOGBKEawYBaYTNJzV7jADkY22HruCJSzjNUTzlUQDAZv59T1nZSwKdP9Ey0ux7bkzFakEPT3cS7kM=",
+    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDB7ef6NQkVdUXkaXxxPKd66dhxJDySsw0IIqCILiOM5D2W4+pRnJ8BiZrPUaKx0TeH3mvs9WQwn7vfER3PVNVs5seCGNWW3AovIWNIePPeoj4mHzy7c4CIoh8rdO4uG8uoPvb3mQZtSocW3kbIIG0bZH9iEF7fQBvCQOYH4Ed3zQfY1VZtEZvi9Ji5PCKdy7b7KJp9kAHKVUBgJ6hgdCBVCvLdfD64yCrs6qc7SwA6D8q+zHxTikyUoHGJm5hr07RMPAme2XSu+fvGc0JBpCcUuPKdY5c9/XxLBDYdRZa2jg0oXOIYTQinNWMHKRcYSYUEegmjTVX3RsHUlRdcugC7ej675n9d7yDQXT//SDGwVMUFv0hvfqs7arzesbnjxLWyYXe4my4bmh5UW4Y5W6yrQIEmbITmVm3+7lXDVgdO6ceo90KPF8M3YHTcPz5yqcv5v5o40tE02YtvovuXuuQj80g9SB3viDfZFnGIl+F1TzcG33EgGwpy60KD41ghwiU=",
     "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
-    "ansible_swapfree_mb": 24575,
-    "ansible_swaptotal_mb": 24575,
+    "ansible_swapfree_mb": 49151,
+    "ansible_swaptotal_mb": 49151,
     "ansible_system": "Linux",
     "ansible_system_capabilities": [],
     "ansible_system_capabilities_enforced": "False",
-    "ansible_system_vendor": "LENOVO",
-    "ansible_uptime_seconds": 12973,
+    "ansible_system_vendor": "Micro-Star International Co., Ltd.",
+    "ansible_uptime_seconds": 182,
     "ansible_user_dir": "/root",
     "ansible_user_gecos": "root",
     "ansible_user_gid": 0,
@@ -1079,15 +1248,10 @@
             "generic_receive_offload": "on",
             "generic_segmentation_offload": "on",
             "highdma": "on",
-            "hsr_dup_offload": "off [fixed]",
-            "hsr_fwd_offload": "off [fixed]",
-            "hsr_tag_ins_offload": "off [fixed]",
-            "hsr_tag_rm_offload": "off [fixed]",
             "hw_tc_offload": "off [fixed]",
             "l2_fwd_offload": "off [fixed]",
             "large_receive_offload": "off [fixed]",
             "loopback": "off [fixed]",
-            "macsec_hw_offload": "off [fixed]",
             "netns_local": "on [fixed]",
             "ntuple_filters": "off [fixed]",
             "receive_hashing": "off [fixed]",
@@ -1140,7 +1304,7 @@
             "vlan_challenged": "off [fixed]"
         },
         "hw_timestamp_filters": [],
-        "id": "8000.5254009bd7ae",
+        "id": "8000.5254005be5b2",
         "interfaces": [],
         "ipv4": {
             "address": "192.168.122.1",
@@ -1149,7 +1313,7 @@
             "network": "192.168.122.0",
             "prefix": "24"
         },
-        "macaddress": "52:54:00:9b:d7:ae",
+        "macaddress": "52:54:00:5b:e5:b2",
         "mtu": 1500,
         "promisc": false,
         "speed": -1,
@@ -1163,9 +1327,9 @@
         "kvm"
     ],
     "ansible_virtualization_type": "kvm",
-    "ansible_wlp0s20f3": {
+    "ansible_wlp5s0": {
         "active": true,
-        "device": "wlp0s20f3",
+        "device": "wlp5s0",
         "features": {
             "esp_hw_offload": "off [fixed]",
             "esp_tx_csum_hw_offload": "off [fixed]",
@@ -1173,15 +1337,10 @@
             "generic_receive_offload": "on",
             "generic_segmentation_offload": "on",
             "highdma": "on",
-            "hsr_dup_offload": "off [fixed]",
-            "hsr_fwd_offload": "off [fixed]",
-            "hsr_tag_ins_offload": "off [fixed]",
-            "hsr_tag_rm_offload": "off [fixed]",
             "hw_tc_offload": "off [fixed]",
             "l2_fwd_offload": "off [fixed]",
             "large_receive_offload": "off [fixed]",
             "loopback": "off [fixed]",
-            "macsec_hw_offload": "off [fixed]",
             "netns_local": "on [fixed]",
             "ntuple_filters": "off [fixed]",
             "receive_hashing": "off [fixed]",
@@ -1216,7 +1375,7 @@
             "tx_gso_robust": "off [fixed]",
             "tx_ipxip4_segmentation": "off [fixed]",
             "tx_ipxip6_segmentation": "off [fixed]",
-            "tx_lockless": "off [fixed]",
+            "tx_lockless": "on [fixed]",
             "tx_nocache_copy": "off",
             "tx_scatter_gather": "on",
             "tx_scatter_gather_fraglist": "off [fixed]",
@@ -1235,28 +1394,28 @@
         },
         "hw_timestamp_filters": [],
         "ipv4": {
-            "address": "10.28.109.29",
-            "broadcast": "10.28.109.255",
+            "address": "192.168.1.9",
+            "broadcast": "192.168.1.255",
             "netmask": "255.255.255.0",
-            "network": "10.28.109.0",
+            "network": "192.168.1.0",
             "prefix": "24"
         },
         "ipv6": [
             {
-                "address": "fe80::64a5:b726:cb32:72eb",
+                "address": "fe80::e0db:670f:723e:b180",
                 "prefix": "64",
                 "scope": "link"
             }
         ],
-        "macaddress": "8c:8d:28:37:df:7f",
+        "macaddress": "a8:7e:ea:ed:79:f2",
         "module": "iwlwifi",
         "mtu": 1500,
-        "pciid": "0000:00:14.3",
+        "pciid": "0000:05:00.0",
         "promisc": false,
         "timestamping": [],
         "type": "ether"
     },
-    "discovered_interpreter_python": "/usr/bin/python3",
+    "discovered_interpreter_python": "/usr/libexec/platform-python",
     "gather_subset": [
         "all"
     ],

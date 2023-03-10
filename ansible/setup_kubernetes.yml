@@ -1,16 +1,22 @@
-- name: Deploy Kubernetes Infraestructure
+
+- name: Deploy KVM Infraestructure
   hosts: kvm_hosts
   vars_files: ./vars/vars.yml
   vars:
     create_vms: []
   become: yes
   tasks:
-    # - name: Install virtualization packages
-    #   block:
-    #     - name: Install packages
-    #       import_tasks: tasks/install-nginx.yml
-
-    - name: Validate vm infos
+    - name: Install virtualization packages
+      block:
+        - name: Install packages
+          import_tasks: tasks/install_packages.yml
+    # Validate if VM's Exists
+    - name: Create networks
+      block:
+        - name: Manage virsh networks
+          import_tasks: tasks/create_network.yml
+      
+    - name: Validate vm info
       block:
         - name: Get VM info
           import_tasks: tasks/validate_vm_exists.yml
