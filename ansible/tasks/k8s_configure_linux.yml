@@ -1,1 +1,35 @@
 ---
+
+- name: Add the Kernel modules
+  community.general.modprobe:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ kernel_modules }}"
+
+- name: configures system parameters
+  sysctl:
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+    state: present
+  loop: "{{ sysctl_parameters }}"
+
+- name: Apply sysctl params without reboot
+  shell: sysctl --system
+
+- name: Put SELinux in permissive mode
+  selinux:
+    policy: targeted
+    state: permissive
+
+# - name: Allow iptables rules
+#   iptables:
+#     chain: "{{ item.chain }}"
+#     protocol: "{{ item.protocol }}"
+#     destination_port: "{{ item.destination_port }}"
+#     ctstate: "{{ item.ctstate }}"
+#     syn: "{{ item.syn }}"
+#     jump: "{{ item.jump }}"
+#   loop: "{{ ip_tables_rules }}"
+#   when: rhel_users is defined
+#   tags:
+#     - ip-tables

@@ -13,7 +13,7 @@ server_roles:
     os_variant: fedora-unknown
     vcpu: 2
     ram: 2048
-    size: 20G
+    size: 20G 
     network: k8s_net
     count: "{{ range(1,2) }}"
   - name: worker

@@ -1,29 +1,43 @@
 ---
-name: Deploy Kubernetes
-hosts: kubernetes_node
-vars: ./vars/default_kubernetes.yml
-become: yes
-tasks:
-  - name: Configure linux server_roles
-    block:
-      - name: Configure Kernel
-        import_tasks: tasks/k8s_configure_linux.yml
-      - name: Installing linux packages
-        import_tasks: tasks/k8s_packages_linux.yml
-    hosts: kubernetes_node
 
-  - name: Installing Control Plane
-    block:
-      - name: Installing kubelet in Control Plane
-        import_tasks: tasks/k8s_install_kubelet.yml
-      - name: Create CP with Kubeadm
-        import_tasks: tasks/k8s_kubeadm.yml
-    hosts: kubernetes_control_plane
-  
-  - name: Installing Workers
-    block:
-      - name: Installing kubelet in Workers
-        import_tasks: tasks/k8s_install_kubelet.yml
-      - name: Add workers with Control Plane
-        import_tasks: tasks/k8s_workers.yml
-    hosts: kubernetes_worker
+- name: Deploy Control plane
+  hosts: kubernetes_control_plane
+  vars_files: ./vars/default_kubernetes.yml
+  become: yes
+  tasks:
+    - name: Configure linux server_roles
+      block:
+        - name: Configure OS
+          import_tasks: tasks/k8s_configure_linux.yml
+        - name: Installing linux packages
+          import_tasks: tasks/k8s_packages_linux.yml
+    - name: Installing Control Plane
+      block:
+        - name: Installing kubelet in Control Plane
+          import_tasks: tasks/k8s_install_kubelet.yml
+        - name: Create CP with Kubeadm
+          import_tasks: tasks/k8s_kubeadm.yml
+
+- name: Deploy Kubernetes node
+  hosts: kubernetes_worker
+  vars_files: ./vars/default_kubernetes.yml
+  become: yes
+  tasks:
+    - name: Configure linux server_roles
+      block:
+        - name: Configure OS
+          import_tasks: tasks/k8s_configure_linux.yml
+        - name: Installing linux packages
+          import_tasks: tasks/k8s_packages_linux.yml
+    - name: Installing Control Plane
+      block:
+        - name: Installing kubelet in Control Plane
+          import_tasks: tasks/k8s_install_kubelet.yml
+        - name: Create CP with Kubeadm
+          import_tasks: tasks/k8s_kubeadm.yml
+    - name: Installing Workers
+      block:
+        - name: Installing kubelet in Workers
+          import_tasks: tasks/k8s_install_kubelet.yml
+        - name: Add workers with Control Plane
+          import_tasks: tasks/k8s_workers.yml

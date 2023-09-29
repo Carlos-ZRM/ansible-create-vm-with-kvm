@@ -1,1 +1,29 @@
 ---
+
+kernel_modules:
+  - overlay
+  - br_netfilter
+
+sysctl_parameters:
+  - name: net.bridge.bridge-nf-call-iptables
+    value: 1
+  - name: net.bridge.bridge-nf-call-ip6tables
+    value: 1
+  - name: net.ipv4.ip_forward
+    value: 1
+
+packages_list:
+  - name: zram-generator-defaults
+    state: absent
+  - name: iptables-services
+    state: present
+  - name: cri-o
+    state: present
+
+kubernetes_package_list:
+  - name: kubeadm
+    state: present
+  - name: kubelet
+    state: present
+  - name: kubectl
+    state: present

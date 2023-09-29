@@ -31,15 +31,15 @@
   loop: "{{ stat_virsh_network.results }}"
   tags: create-network
 
-- name: Set networks to Auto Start
-  shell: |
-    virsh net-start {{ item.item.name }}
-  args:
-    chdir: /etc/libvirt/qemu/networks/templates
-  when:
-     "{{ item.rc==1 }}"
-  loop: "{{ stat_virsh_network.results }}"
-  tags: create-network
+# - name: Set networks to Auto Start
+#   shell: |
+#     virsh net-start {{ item.item.name }}
+#   args:
+#     chdir: /etc/libvirt/qemu/networks/templates
+#   when:
+#      "{{ item.rc==1 }}"
+#   loop: "{{ stat_virsh_network.results }}"
+#   tags: create-network
 
 - name: Start virsh networks
   shell:  |
